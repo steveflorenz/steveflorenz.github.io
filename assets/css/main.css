@@ -3933,7 +3933,13 @@ input, select, textarea {
 		  }
 
 		.column1 {
-			float: left;
-			width: 33.33%;
+			width: 380px;
+			height: auto;
 			padding: 5px;
+			transition: 0.3s;
 		  }
+
+		.column1:hover {
+			transform: scale(1.1);
+			z-index: 2;
+		}
