@@ -188,3 +188,12 @@
 			});
 
 })(jQuery);
+
+function toggleResume() {
+    var pdfContainer = document.getElementById("pdfContainer");
+    if (pdfContainer.style.display === "none") {
+        pdfContainer.style.display = "block";
+    } else {
+        pdfContainer.style.display = "none";
+    }
+}
