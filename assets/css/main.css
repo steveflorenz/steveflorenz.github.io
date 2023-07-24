@@ -3943,3 +3943,9 @@ input, select, textarea {
 			transform: scale(1.1);
 			z-index: 2;
 		}
+
+		.profile {
+			border-radius: 50%;
+     	 	width: 130px;
+      		height: 130px;
+		}
