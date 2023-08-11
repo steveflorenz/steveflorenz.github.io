@@ -3946,10 +3946,87 @@ input, select, textarea {
 
 		.profile {
 			border-radius: 50%;
-     	 	width: 150px;
-      		height: 150px;
+     	 	width: 180px;
+      		height: 180px;
 		}
 
 		p.justify_text {
 			text-align: justify;
+		}
+
+		.container {
+			position: relative;
+			min-height: 100vh;
+			/* background-color: #ddd; */
+		}
+
+		.container h2 {
+			font-weight:lighter;
+			padding: 5px;
+			text-align: center;
+			text-transform: capitalize;
+		}
+
+		.container .image-container {
+			display: flex;
+			flex-wrap: wrap;
+			gap: 15px;
+			justify-content: center;
+			padding: 10px;
+		}
+
+		.container .image-container .img-gallery {
+			height: 250px;
+			width: 350px;
+			border: 6px solid #ddd;
+			box-shadow: 0 5px 15px rgba(0, 0, 0, .1);
+			overflow: hidden;
+			cursor: pointer;
+		}
+
+		.container .image-container .img-gallery img {
+			height: 100%;
+			width: 100%;
+			object-fit: cover;
+			transition: 1s linear;
+		}
+
+		.container .image-container .img-gallery:hover img {
+			transform: scale(1.1);
+		}
+
+		.container .popup-img-gallery {
+			position: fixed;
+			top: 0; left: 0;
+			background: rgba(0, 0, 0, .6);
+			height: 100%;
+			width: 100%;
+			z-index: 100;
+			display: none;
+		}
+
+		.container .popup-img-gallery span {
+			position: absolute;
+			top: 10; right: 10px;
+			font-size: 60px;
+			font-weight: 100px;
+			color: #fff;
+			cursor: pointer;
+			z-index: 100;
+		}
+
+		.container .popup-img-gallery img {
+			position: absolute;
+			top: 40%; left: 50%;
+			transform: translate(-50%, -50%);
+			border: 5px solid #fff; 
+			border-radius: 5px;
+			width: 80%;
+			object-fit: cover;
+		}
+
+		@media (max-width:768px) {
+			.container .popup-img-gallery img {
+				width: 95%;
+			}
 		}
