@@ -3933,21 +3933,21 @@ input, select, textarea {
 		  }
 
 		.column1 {
-			width: 380px;
+			width: 480px;
 			height: auto;
-			padding: 5px;
+			padding: 10px;
 			transition: 0.3s;
 		  }
 
 		.column1:hover {
 			transform: scale(1.1);
-			z-index: 2;
+			z-index: 1;
 		}
 
 		.profile {
 			border-radius: 50%;
-     	 	width: 180px;
-      		height: 180px;
+     	 	width: 200px;
+      		height: 200px;
 		}
 
 		p.justify_text {
@@ -4029,4 +4029,10 @@ input, select, textarea {
 			.container .popup-img-gallery img {
 				width: 95%;
 			}
+		}
+
+		/*JUSTIFY TEXT IN SKILLS*/
+		.justify-txt {
+			text-align: justify;
+			text-justify: inter-word;
 		}
