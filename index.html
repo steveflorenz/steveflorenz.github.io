@@ -7,6 +7,7 @@
 <html>
 	<head>
 		<title>Florenz's Portfolio</title>
+		<link rel="icon" type="image/x-icon" href="images/thefox.png">
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
 		<link rel="stylesheet" href="assets/css/main.css" />
@@ -17,6 +18,8 @@
 		<link rel="preconnect" href="https://fonts.googleapis.com">
 		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 		<link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+		<link rel="stylesheet" href="assets/css/magnific-popup.css">
+		
 	</head>
 	<body class="is-preload">
 
@@ -26,11 +29,12 @@
 					<nav>
 						<ul>
 							<!-- <img class="profile" src="images/profile1.png" alt="way lang" > -->
-
+							<li><a href="#profile">Florenz</a></li>
 							<li><a href="#intro">About</a></li>
 							<li><a href="#one">Skills</a></li>
 							<li><a href="#two">Projects</a></li>
 							<li><a href="#three">Contact</a></li>
+							<li><a href="#four">Resume</a></li>
 						</ul>
 					</nav>
 				</div>
@@ -39,18 +43,23 @@
 		<!-- Wrapper -->
 			<div id="wrapper">
 
+					<section id="profile" class="wrapper style1 fullscreen fade-up">
+							<div class="inner profile-picture">
+								<img class="profile mid-prof-img" src="images/me_ver2.jpeg">
+								<span class="prof-txt auto-type">Hello there!</span>
+							</div>
+							<a href="#intro" class="button scrolly more-about-btn">EXPLORE</a>
+					</section>
+
 				<!-- Intro -->
-					<section id="intro" class="wrapper style1 fullscreen fade-up">
+					<section id="intro" class="wrapper style2 fullscreen fade-up per-section-margin">
 						<div class="inner">
 							<!-- Z -->
-							<img class="profile" src="images/profile.jpeg">
-							<br>
-							<br>
+							
+
 							<h1>Steve Florenz Mendoza</h1>
 							<h2 style="font-size: large;">Computer Science</h2>
-							<!-- <p>Just another fine responsive site template designed by <a href="http://html5up.net">HTML5 UP</a><br />
-							and released for free under the <a href="http://html5up.net/license">Creative Commons</a>.</p> -->
-							<p class="justify-txt"> Hi, I am a graduate of Computer Science at the University of Saint La Salle - Bacolod, Philippines.
+							<p class="justify-txt" style="margin-bottom: 8rem;"> Hi, I am a graduate of Computer Science at the University of Saint La Salle - Bacolod, Philippines.
 								I am an enthusiastic individual with a passion for technological development that may benefit business processes and 
 								the broader community. I am particularly interested in Web development/design, graphic design, Data Science & analytics 
 								and software development/engineering. I apsire to contribute my skills and knowledge in an innovative work environment, 
@@ -64,36 +73,101 @@
 								throughout my internship, I had the chance to collaborate with mechatronic interns on projects
 								broadening my knowledge in robotics technology and development.
 							</p>
-							<h2>Certificates</h2>
+							
+							<div class="ojt-tools-container">
+								<div class="ojt-tools">
+								<img class="ojt-tools-img" src="OJT/CI.png" alt="">
+								</div>
+
+								<div class="ojt-tools">
+									<img class="ojt-tools-img" src="OJT/bootsrap.png" alt="">
+								</div>
+
+								<div class="ojt-tools">
+									<img class="ojt-tools-img" src="OJT/php.png" alt="">
+								</div>
+
+								<div class="ojt-tools">
+									<img class="ojt-tools-img" src="OJT/arduino.png" alt="">
+								</div>
+
+								<div class="ojt-tools">
+									<img class="ojt-tools-img" src="OJT/laravel.png" alt="">
+								</div>
+							</div>
+
+							<p class="align-center">Here are the several tools and frameworks I had the opportunity to work with during my internship.</p>
+
+							<div class="my-info">
+								<h2 class="space-per-char align-center my-info-heading-txt">INFORMATION</h2>
+								<div class="my-info-container">
+									<div class="info-txt-wrap">
+										<p class="info-txt-font-style space-per-char align-center">STEVE FLORENZ MENDOZA</p>
+										<p class="info-txt-font-style space-per-char align-center">TALISAY CITY, NEGROS OCCIDENTAL, 6115</p>
+										<p class="info-txt-font-style space-per-char align-center"><a href="tel:+63-960-858-5447">+63-960-858-5447</a></p>
+										<p class="info-txt-font-style align-center"><a href="mailto:steveflorenzm@gmail.com">steveflorenzm@gmail.com</a></p>
+									</div>
+									<div class="info-txt-wrap">
+										<p class="info-txt-font-style space-per-char align-center">UNIVERSITY OF SAINT LA SALLE</p>
+										<p class="info-txt-font-style space-per-char align-center">BACOLOD CITY, 6100</p>
+										<p class="info-txt-font-style space-per-char align-center">BACHELORS OF SCIENCE IN COMPUTER SCIENCE</p>
+										<p class="info-txt-font-style space-per-char align-center">2019 - 2023</p>
+									</div>
+								</div>
+							</div>
+
+							<div style="margin-bottom: 2rem;" class="align-center">
+								<img class="section-headings-img section-headings" src="images/cert-icon.png" alt="">
+								<h2 class="space-per-char" >CERTIFICATES</h2>
+							</div>
+							
 
 							<section class="wrapper style3 fade-up">
 								<div class="row1">
 									<div class="column1">
-										<img src="images/EDUCABA_Cert.jpeg" style="width: 100%;">
+										<a href="certificates/EDUCABA_Cert.jpeg" class="popup-image">
+										<img src="certificates/EDUCABA_Cert.jpeg" style="width: 100%;">
+										</a>
 									</div>
+
 									<div class="column1">
-										<img src="images/augcert.png" alt="" style="width: 100%;">
-									</div>
-								</div>
-								<div class="row1">
-									<div class="column1">
-										<img src="images/DataScience_by_Simplilearn_SFM.png" alt="" style="width: 100%;">
-									</div>
-									<div class="column1">
-										<img src="images/cryptocert.png" alt="" style="width: 100%;">
+										<a href="certificates/augcert.png" class="popup-image">
+										<img src="certificates/augcert.png" alt="" style="width: 100%;">
+										</a>
 									</div>
 								</div>
+
 								<div class="row1">
 									<div class="column1">
-										<img src="images/workshopcert.jpg" alt="" style="width: 100%;">
+										<a href="certificates/DataScience_by_Simplilearn_SFM.png" class="popup-image">
+										<img src="certificates/DataScience_by_Simplilearn_SFM.png" alt="" style="width: 100%;">
+										</a>
 									</div>
 									<div class="column1">
-										<img src="images/teb_cert.jpg" alt="" style="width: 100%;">
+										<a href="certificates/cryptocert.png" class="popup-image">
+										<img src="certificates/cryptocert.png" alt="" style="width: 100%;">
+										</a>
 									</div>
 								</div>
+
 								<div class="row1">
 									<div class="column1">
-										<img src="images/kaggle.png" alt="" style="width: 100%;">
+										<a href="certificates/workshopcert.jpg" class="popup-image">
+										<img src="certificates/workshopcert.jpg" alt="" style="width: 100%;">
+										</a>
+									</div>
+									<div class="column1">
+										<a href="certificates/teb_cert.jpg" class="popup-image">
+										<img src="certificates/teb_cert.jpg" alt="" style="width: 100%;">
+										</a>
+									</div>
+								</div>
+
+								<div class="row1">
+									<div class="column1">
+										<a href="certificates/kaggle.png" class="popup-image">
+										<img src="certificates/kaggle.png" alt="" style="width: 100%;">
+										</a>
 									</div>
 									<div class="column1">
 										<!-- <img src="" alt="" style="width: 100%;"> -->
@@ -104,13 +178,16 @@
 					</section>
 
 				<!-- One -->
-					<section id="one" class="wrapper style3 fade-up">
+					<section id="one" class="wrapper style3 fade-up per-section-margin">
 						<div class="inner">
-							<h2>Skills</h2>
+							<div style="margin-bottom: 3rem;" class="align-center">
+								<img class="section-headings-img section-headings" src="images/skill-set.gif" alt="">
+								<h2 class="space-per-char" >SKILLS</h2>
+							</div>
 							<p style="font-size: medium;"> Through my education in Computer Science, I have developed a strong foundation in various soft & technical skills.</p>
 							<div class="features">
 								<section>
-									<span class="icon solid major fa-code"></span>
+									<span class="icon solid major fa fa-file-code"></span>
 									<h3>Programming</h3>
 									<ul class="prog_skills">
 										<li>C++</li>
@@ -178,9 +255,13 @@
 					</section>
 
 					<!-- Two -->
-					<section id="two" class="wrapper style2 spotlights">
+					<section id="two" class="wrapper style2 spotlights per-section-margin">
+						<div style="margin-bottom: 3rem;" class="align-center">
+							<img class="section-headings-img section-headings" src="images/proj.gif" alt="">
+							<h2 class="space-per-char" >PROJECTS</h2>
+						</div>
 						<section>
-							<a class="image"><img src="images/thesis_project.png" alt="" data-position="center center" /></a>
+							<a href="images/thesis_project.png" class="image another-img-popup"><img src="images/thesis_project.png" alt="" data-position="center center" /></a>
 							<div class="content">
 								<div class="inner">
 									<h2>Thesis Project</h2>
@@ -195,7 +276,7 @@
 							</div>
 						</section>
 						<section>
-							<a class="image"><img src="images/inventory.png" alt="" data-position="top center" /></a>
+							<a href="images/inventory.png" class="image another-img-popup"><img src="images/inventory.png" alt="" data-position="top center" /></a>
 							<div class="content">
 								<div class="inner">
 									<h2>Inventory (CodeIgniter)</h2>
@@ -207,7 +288,7 @@
 							</div>
 						</section>
 						<section>
-							<a class="image"><img src="images/senti_cart.jpeg" alt="" data-position="25% 25%" /></a>
+							<a href="images/senti_cart.jpeg" class="image another-img-popup"><img src="images/senti_cart.jpeg" alt="" data-position="25% 25%" /></a>
 							<div class="content">
 								<div class="inner">
 									<h2>Internship Project</h2>
@@ -226,37 +307,29 @@
 					</section>
 
 				<!-- Three -->
-					<section id="three" class="wrapper style1 fade-up">
+					<section id="three" class="wrapper style1 fade-up per-section-margin">
 						<div class="inner">
-							<h2>Contact</h2>
+							<div style="margin-bottom: 3rem;" class="align-center">
+								<h2 class="space-per-char" >CONTACT</h2>
+							</div>
 							<p>You can contact me through:</p>
 							<div class="split style1">
 								<section>
 									<ul class="contact">
 										<li>
 											<h3>Email</h3>
-											<a href="https://www.gmail.com">steveflorenzm@gmail.com</a>
+											<a href="mailto: steveflorenzm@gmail.com">steveflorenzm@gmail.com</a>
 											<br> or <br>
-											<a href="https://www.gmail.com">tebtebs2200@gmail.com</a>
+											<a href="mailto: tebtebs2200@gmail.com">tebtebs2200@gmail.com</a>
 										</li>
 										<li>
 											<h3>Phone</h3>
-											<span>+63 960 858 5447 </span>
+											<span><a href="tel: +63-960-858-5447">+63-960-858-5447</a></span>
 										</li>
 										<li>
 											<h3>Address</h3>
 											<span>Talisay City, Negros Occidental,<br />
-											Philippines</span>
-										</li>
-										<li>
-											<h3>RESUME</h3>
-											<p style="font-size: small;">Download: <a href="images/Steve_Florenz_Mendoza_Resume.pdf" download>Resume</a>
-											<br> or <br>
-											<a onclick="toggleResume()">View Resume</a>
-                                            <div id="pdfContainer" style="display: none;">
-                                                <iframe id="pdfFrame" src="images/Steve_Florenz_Mendoza_Resume.pdf" width="100%"
-												 height="800px"></iframe>
-                                            </div></p>
+											6115, Philippines</span>
 										</li>
 									</ul>
 								</section>
@@ -276,7 +349,7 @@
 											</ul>
 											<ul class="icons">
 												<li class="icon brands fa-facebook-f"><span class="label">Facebook</span></li>
-												<p>Teb.mendoza</p>
+												<p>Teb Mendoza</p>
 											</ul>
 										</li>
 									</ul>
@@ -284,6 +357,27 @@
 							</div>
 						</div>
 					</section>
+
+					<section id="four" class="wrapper style1 fade-up">
+						<div class="inner">
+							<div style="margin-bottom: 5rem;" class="align-center">
+								<h2 class="space-per-char" >RESUME</h2>
+							</div>
+
+								<section>
+									<ul class="contact">
+										<div class="align-center">
+											<a href="images/Florenz_Resume.jpg" class="button resume-popup">View My Resume</a>
+										</div>
+										
+										<div class="align-center" style="margin-top: 3rem;">
+											<a href="images/Steve_Florenz_Mendoza_Resume.pdf" class="button" download>DOWNLOAD RESUME</a>
+										</div>
+									</ul>
+								</section>
+						</div>
+					</section>
+
 				</div>
 
 		<!-- Footer -->
@@ -305,5 +399,9 @@
 			<script src="assets/js/breakpoints.min.js"></script>
 			<script src="assets/js/util.js"></script>
 			<script src="assets/js/main.js"></script>
+			<script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+			<script src="assets/js/type-write-effect.js"></script>
+			<script src="assets/js/jquery.magnific-popup.min.js"></script>
+			<script src="assets/js/magnific-popup-options.js"></script>
 	</body>
 </html>

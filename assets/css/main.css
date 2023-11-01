@@ -175,7 +175,7 @@ input, select, textarea {
 	}
 
 	h1, h2, h3, h4, h5, h6 {
-		color: #ffffff;
+		color: #fae7db;
 		font-weight: bold;
 		line-height: 1.5;
 		margin: 0 0 0.5em 0;
@@ -2523,7 +2523,7 @@ input, select, textarea {
 			width: 2.5em;
 			height: 2.5em;
 			display: block;
-			background: #ffffff;
+			background: #fae7db;
 			border-radius: 100%;
 			color: #312450;
 			text-align: center;
@@ -3240,7 +3240,7 @@ input, select, textarea {
 		}
 
 		.wrapper.style1 {
-			background-color: #021518;
+			background-color: transparent;
 		}
 
 		.wrapper.style1-alt {
@@ -3533,7 +3533,7 @@ input, select, textarea {
 		position: fixed;
 		text-align: right;
 		top: 0;
-		width: 18em;
+		width: 15em;
 		z-index: 10000;
 	}
 
@@ -3872,6 +3872,23 @@ input, select, textarea {
 
 /* Intro */
 
+	#profile {
+		background-attachment: fixed;
+		background-image: url("images/intro.svg");
+		background-position: top right;
+		background-repeat: no-repeat;
+		background-size: 100% 100%;
+		
+	}
+
+	#four {
+		background-attachment: fixed;
+		background-image: url("images/intro.svg");
+		background-position: top right;
+		background-repeat: no-repeat;
+		background-size: 100% 100%;
+	}
+
 	#intro {
 		background-attachment: fixed;
 		background-image: url("images/intro.svg");
@@ -3907,6 +3924,17 @@ input, select, textarea {
 			}
 
 		}
+
+		@media screen and (max-width: 768px) {
+			#intro {
+				background-attachment: fixed;
+				background-image: url("images/intro.svg");
+				background-position: top right;
+				background-repeat: no-repeat;
+				background-size: 100% 100%;
+			}
+			
+		}
 		/* Addiotnal Styles */
 		ul.skills{
 			list-style-type: circle;
@@ -3930,13 +3958,16 @@ input, select, textarea {
 		
 		.row1 {
 			display: flex;
+			flex-wrap: wrap;
 		  }
 
 		.column1 {
-			width: 480px;
+			flex: 0 0 calc(100% - 20px);
+			max-width: calc(100% - 20px);
 			height: auto;
 			padding: 10px;
 			transition: 0.3s;
+			margin-bottom: 10px;
 		  }
 
 		.column1:hover {
@@ -3944,10 +3975,51 @@ input, select, textarea {
 			z-index: 1;
 		}
 
+		@media (min-width: 768px) {
+			.column1 {
+				flex: 0 0 calc(50% - 20px);
+				max-width: calc(50% - 20px);
+			}
+		}
+
+		
+		/*-- FOR PROFILE IN 1st SECTION --*/
+		.profile-picture {
+			align-items: center;
+			justify-content: center;
+			padding: 4rem 4rem 2rem 4rem;
+			opacity: 0;
+			animation: fadeIn 1s ease-in-out forwards;
+		}
+
+		@media (max-width: 768px) {
+			.profile-picture {
+				padding: 3em 2em 1em 2em;
+			}
+		}
+
+		@keyframes fadeIn {
+			0% {
+				opacity: 0;
+			}
+			100% {
+				opacity: 1;
+			}
+		}
+
 		.profile {
 			border-radius: 50%;
-     	 	width: 200px;
-      		height: 200px;
+     	 	width: 100px;
+      		height: 100px;
+			vertical-align: middle;
+		}
+
+		.prof-txt {
+			margin-left: 20px;
+			font-size: 20px;
+			font-family: Courier;
+			color: #fae7db;
+			vertical-align: middle;
 		}
 
 		p.justify_text {
@@ -4036,3 +4108,146 @@ input, select, textarea {
 			text-align: justify;
 			text-justify: inter-word;
 		}
+
+		.mid-prof-img {
+			horizontal-align: middle;
+		}
+
+		/*PROFILE PIC SECTION PADDING*/
+		.prof-section-padding {
+			padding: 4em 4em 2em 4em;
+			display: flex;
+			height: 100%;
+		}
+
+		.space-per-char {
+			letter-spacing: 5px;
+		}
+
+		/*-- MY INFO IN ABOUT SECTION --*/
+		.my-info {
+			align-items: center;
+			justify-content: center;
+			padding-top: 10em;
+			padding-bottom: 10em;
+		}
+		
+		.my-info-heading-txt {
+			margin-bottom: 5rem;
+		}
+
+		.my-info-container {
+			display: flex;
+			flex-wrap: wrap;
+			justify-content: space-between;
+		}
+
+		.info-txt-wrap {
+			border: 1px #cccccc65;
+  			border-radius: 15px;
+			padding: 40px 20px 40px 20px;
+			background-color: #cccccc65;
+			width: calc(50% - 5px); 
+			margin-bottom: 2rem;
+		}
+		
+		.info-txt-wrap:last-child{
+			margin-right: 0;
+		}
+
+		.info-txt-font-style {
+			color: #fae7db;
+		}
+
+		@media (max-width: 768px) {
+			.info-txt-wrap {
+			  width: 100%;
+			  margin-right: 0;
+			}
+		  }
+
+		  /*ADDITIONAL TO SECTIOM 1 STYLES*/
+		  .intro-margin {
+			margin-bottom: 5rem;
+		  }
+
+		  .more-about-btn {
+			width: 20%;
+			margin-left: 4rem;
+			margin-top: 2rem;
+			margin-bottom: 2rem;
+		  }
+
+		  @media (max-width: 768px) {
+			.more-about-btn {
+				width: 50%;
+				margin-left: auto;
+				margin-right: auto;
+			}
+		  }
+
+		  /*-- OJT TOOLS UNDER EXPERIENCE SECTION --*/
+		  .ojt-tools-container {
+			display: flex;
+			margin-top: 5rem;
+			margin-bottom: 2rem;
+		  }
+
+		  .ojt-tools {
+			flex: 0 0 calc(20% - 10px); /* Set the width of each item (20% with spacing) */
+			max-width: calc(20% - 10px); /* Set the max width to ensure spacing */
+			margin: 5px; /* Add some margin to separate items */
+			text-align: center;
+			transition: 0.3s;
+		  }
+
+		  @media (max-width: 768px) {
+			.ojt-tools {
+			  flex: 0 0 calc(20% - 10px); /* Set the width of each item (50% with spacing) for two items in a row on smaller screens */
+			  max-width: calc(20% - 10px); /* Set the max width to ensure spacing */
+			  padding: 0%;
+			  margin: auto;
+			}
+		  }
+
+		  .ojt-tools:hover {
+			transform: scale(1.1);
+			z-index: 1;
+		  }
+
+		  .ojt-tools:not(:last-child) {
+			margin-right: 10px;
+		  }
+
+		  .ojt-tools-img {
+			max-width: 100px;
+		  }
+
+		  @media (max-width:768px) {
+			.ojt-tools-img {
+				max-width: 50px;
+			}
+		  }
+
+		  /*!-- SECTIONS HEADING IMGAGES --!*/
+		  .section-headings {
+			flex: 1;
+			transition: 0.3s;
+		  }
+
+		  .section-headings:hover {
+			transform: scale(1.1);
+			z-index: 1;
+		  }
+
+		  .section-headings-img {
+			max-width: 100px;
+		  }
+
+		  /*!-- END OF SECTION HEADINGS --!*/
+
+		  /*!-- SECTION MARGINS --!*/
+		  .per-section-margin {
+			margin-bottom: 10rem;
+		  }
+		  
