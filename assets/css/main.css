@@ -3537,6 +3537,10 @@ input, select, textarea {
 		z-index: 10000;
 	}
 
+	#sidebar.sidebar-hidden {
+		display: none;
+	}
+
 		#sidebar > .inner {
 			display: -moz-flex;
 			display: -webkit-flex;

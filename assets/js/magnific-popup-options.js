@@ -22,7 +22,16 @@ $(document).ready(function() {
           // you don't need to add "opener" option if this code matches your needs, it's defailt one.
           return openerElement.is('img') ? openerElement : openerElement.find('img');
           }
+        },
+
+        callbacks: {
+        open: function() {
+          $('#sidebar').addClass('sidebar-hidden');
+        },
+        close: function() {
+          $('#sidebar').removeClass('sidebar-hidden');
         }
+      }
       });
     };
 
@@ -40,6 +49,14 @@ $(document).ready(function() {
             easing: 'ease-in-out',
             opener: function(openerElement) {
               return openerElement.is('img') ? openerElement : openerElement.find('img');
+            }
+          },
+          callbacks: {
+            open: function() {
+              $('#sidebar').addClass('sidebar-hidden');
+            },
+            close: function(){
+              $('#sidebar').removeClass('sidebar-hidden');
             }
           }
         });
@@ -60,6 +77,14 @@ $(document).ready(function() {
             easing: 'ease-in-out',
             opener: function(openerElement) {
               return openerElement.is('a') ? openerElement : openerElement.find('img');
+            }
+          },
+          callbacks: {
+            open: function() {
+              $('#sidebar').addClass('sidebar-hidden');
+            },
+            close: function(){
+              $('#sidebar').removeClass('sidebar-hidden');
             }
           }
         });
