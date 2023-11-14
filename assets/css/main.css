@@ -3022,7 +3022,7 @@ input, select, textarea {
 				-webkit-transition: opacity 1s ease;
 				-ms-transition: opacity 1s ease;
 				transition: opacity 1s ease;
-				background: rgba(38, 34, 84, 0.9);
+				background: rgba(19, 89, 122, 0.954);
 				content: '';
 				display: block;
 				height: 100%;
@@ -4198,4 +4198,7 @@ input, select, textarea {
 			margin-bottom: 10rem;
 		  }
 		  
+		  .img-border-radius {
+			border-radius: 15px;
+		  }
 		  
