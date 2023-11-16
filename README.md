@@ -23,8 +23,8 @@ My portfolio link: https://steveflorenz.github.io
 
 ## Contact
 
-- **LinkedIn:** [linkedIn:sf-mendoza](https://www.linkedin.com/in/sf-mendoza-cmd2205000)
-- **Gmail:** [steveflorenz](https://steveflorenzm@gmail.com)
+- **LinkedIn:** [![LinkedIn](https://img.shields.io/badge/LinkedIn-sf--mendoza-blue)](https://www.linkedin.com/in/sf-mendoza-cmd2205000)
+- **Gmail:** [![Gmail](https://img.shields.io/badge/Gmail-steveflorenz-red)](mailto:steveflorenzm@gmail.com)
 
 ## Acknowledgements 
 - **Template:** [HTML5UP](https://html5up.net)
