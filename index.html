@@ -363,26 +363,39 @@
 							<div style="margin-bottom: 3rem;" class="align-center">
 								<h2 class="space-per-char" > CONTACT</h2>
 							</div>
-							<p>You can contact me through:</p>
+							<p>Send me a message:</p>
 							<div class="split style1">
 								<section>
-									<ul class="contact">
-										<li>
-											<h3><i class="fa fa-user-circle"></i> Email</h3>
-											<a href="mailto: steveflorenzm@gmail.com">steveflorenzm@gmail.com</a>
-											<br> or <br>
-											<a href="mailto: tebtebs2200@gmail.com">tebtebs2200@gmail.com</a>
-										</li>
-										<li>
-											<h3><i class="fa fa-phone"></i> Phone</h3>
-											<span><a href="sms: +63-960-858-5447">+63-960-858-5447</a></span>
-										</li>
-										<li>
-											<h3><i class="fas fa-map-marker-alt"></i> Address</h3>
-											<span>Bacolod City, Negros Occidental,<br />
-											6100, Philippines</span>
-										</li>
-									</ul>
+									<form action="https://formsubmit.co/steveflorenzm@gmail.com" method="POST">
+										<!-- honeypot -->
+										<input type="text" name="_honey" style="display: none;">
+										<!-- disable captcha -->
+										<input type="hidden" name="_captcha" value="false"> 
+										<input type="hidden" name="submitted" value="https://steveflorenz.github.io/submitted.html">
+
+										<div class="fields">
+											<div class="field half">
+												<label for="name">Name</label>
+												<input type="text" name="name" id="name" />
+											</div>
+											<div class="field half">
+												<label for="email">Email</label>
+												<input type="text" name="email" id="email" placeholder="example@email.com" required/>
+											</div>
+											<div class="field">
+												<label for="subject">Subject</label>
+												<input type="text" subject="subject" id="subject">
+											</div>
+											<div class="field">
+												<label for="message">Message</label>
+												<textarea name="message" id="message" rows="5" placeholder="Enter message here" required></textarea>
+											</div>
+										</div>
+										<ul class="actions">
+											<!-- <li><a href="" class="button submit">Send Message</a></li> -->
+											<button class="submit-btn submit">Send Message</button>
+										</ul>
+									</form>
 								</section>
 								<!--second col of contact-->
 								<section>
