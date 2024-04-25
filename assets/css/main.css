@@ -4099,6 +4099,8 @@ ul.graph_skills {
 	font-size: small;
 }
 
+/* -- FOR CERTIFICATE -- */
+
 .row1 {
 	display: flex;
 	flex-wrap: wrap;
@@ -4347,4 +4349,66 @@ p.justify_text {
 	text-align: center;
 	font-size: large;
 
+}
+
+/* -- for gallery -- */
+
+#gal-1 {
+	background-attachment: fixed;
+	background-image: url("images/intro.svg");
+	background-position: top right;
+	background-repeat: no-repeat;
+	background-size: 100% 100%;
+}
+
+.gal-container {
+	position: relative;
+	min-height: 100vh;
+}
+
+.gal-container .img-container {
+	display: flex;
+	flex-wrap: wrap;
+	gap: 10px;
+	justify-content: center;
+	padding: 10px;
+}
+
+.gal-container .img-container .gal-img {
+	flex: 0 0 calc(33.33% - 20px);
+	/* Adjust width and gap as needed */
+	height: 250px;
+	box-shadow: 0 5px 15px rgba(0, 0, 0, .1);
+	overflow: visible;
+	cursor: pointer;
+}
+
+.gal-container .img-container .gal-img img {
+	height: 100%;
+	width: 100%;
+	object-fit: cover;
+	transition: 0.3s;
+}
+
+.gal-container .img-container .gal-img:hover img {
+	transform: scale(1.1);
+	z-index: 1;
+}
+
+/* Media query for screens smaller than 768px */
+@media screen and (max-width: 768px) {
+	.gal-container .img-container .gal-img {
+		flex: 0 0 calc(33.33% - 20px);
+		/* Three images per row */
+		height: 100px;
+	}
+}
+
+/* Media query for screens smaller than 480px */
+@media screen and (max-width: 480px) {
+	.gal-container .img-container .gal-img {
+		flex: 0 0 calc(33.33% - 10px);
+		/* One image per row */
+		height: 100px;
+	}
 }
