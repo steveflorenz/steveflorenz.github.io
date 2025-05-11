@@ -4084,21 +4084,6 @@ ul.skills {
 	font-size: small;
 }
 
-ul.prog_skills {
-	list-style-type: circle;
-	font-size: small;
-}
-
-ul.data_sci {
-	list-style-type: circle;
-	font-size: small;
-}
-
-ul.graph_skills {
-	list-style-type: circle;
-	font-size: small;
-}
-
 /* -- FOR CERTIFICATE -- */
 
 .row1 {
@@ -4350,6 +4335,38 @@ p.justify_text {
 	font-size: large;
 
 }
+
+/* -- FOR DROPDOWN -- */
+/* .dropdown {
+	position: relative;
+	display: inline-block;
+}
+
+.dropdown-content {
+	display: none;
+	position: absolute;
+	background-color: #f000;
+	min-width: 800px;
+	box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
+	z-index: 1;
+	padding: 1rem;
+}
+
+.dropdown:hover .dropdown-content {
+	display: block;
+}
+
+.justify-txt {
+	text-align: justify;
+}
+
+.space-per-char {
+	letter-spacing: 1px;
+}
+
+h2 {
+	cursor: pointer;
+} */
 
 /* -- for gallery -- */
 
