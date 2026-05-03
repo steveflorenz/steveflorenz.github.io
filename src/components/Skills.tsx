@@ -1,11 +1,11 @@
-import { FaApple, FaCode, FaLinux, FaWindows } from "react-icons/fa";
+import { FaApple, FaLinux, FaWindows } from "react-icons/fa";
 import "./css/Skills.css";
-import { LuCirclePower, LuNetwork } from "react-icons/lu";
+import { LuNetwork } from "react-icons/lu";
 import { ImPieChart } from "react-icons/im";
 import { SiSecurityscorecard } from "react-icons/si";
 import { GiFeather, GiPalette } from "react-icons/gi";
 import { BsFillWrenchAdjustableCircleFill } from "react-icons/bs";
-import { PiPowerDuotone, PiPowerFill } from "react-icons/pi";
+import { PiPowerFill } from "react-icons/pi";
 import { TbCodeCircle2Filled } from "react-icons/tb";
 import "./Certificates";
 import Certificates from "./Certificates.tsx";
