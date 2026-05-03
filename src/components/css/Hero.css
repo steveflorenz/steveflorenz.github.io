@@ -1,0 +1,351 @@
+#hero {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  min-height: 100vh;
+  max-width: 1400px;
+  margin: 0 auto;
+  position: relative;
+  padding-left: clamp(24px, 5vw, 60px);
+  padding-right: clamp(24px, 5vw, 60px);
+  overflow: hidden;
+  isolation: isolate;
+}
+
+.hero-tag {
+  font-family: "Space Mono", monospace;
+  font-size: 12px;
+  color: var(--accent);
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  margin-bottom: 24px;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  animation: fadeInUp 0.8s ease both;
+}
+
+.hero-tag::before {
+  content: "";
+  width: 40px;
+  height: 1px;
+  background: var(--accent);
+}
+
+.hero-name {
+  font-size: clamp(56px, 8vw, 110px);
+  font-weight: 700;
+  line-height: 0.95;
+  letter-spacing: -3px;
+  margin-bottom: 8px;
+  animation: fadeInUp 0.8s 0.1s ease both;
+}
+
+.hero-name .line1 {
+  color: var(--text);
+  display: block;
+}
+
+.hero-name .line2 {
+  display: block;
+  background: linear-gradient(135deg, var(--accent) 0%, var(--accent3) 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.hero-title {
+  font-family: "Space Mono", monospace;
+  font-size: clamp(13px, 1.5vw, 17px);
+  color: var(--muted);
+  margin-top: 28px;
+  margin-bottom: 40px;
+  max-width: 600px;
+  line-height: 1.8;
+  animation: fadeInUp 0.8s 0.2s ease both;
+  text-align: center;
+}
+
+.hero-title .keyword {
+  color: var(--accent2);
+}
+
+.hero-title .keyword2 {
+  color: var(--accent4);
+}
+
+.hero-ctas {
+  display: flex;
+  gap: 16px;
+  animation: fadeInUp 0.8s 0.3s ease both;
+}
+
+.btn-primary {
+  font-family: "Space Grotesk", sans-serif;
+  font-weight: 600;
+  font-size: 13px;
+  letter-spacing: 1.5px;
+  text-transform: uppercase;
+  text-decoration: none;
+  color: var(--bg);
+  background: var(--accent);
+  padding: 14px 32px;
+  border: none;
+  cursor: pointer;
+  position: relative;
+  overflow: hidden;
+  transition: transform 0.2s;
+  clip-path: polygon(8px 0%, 100% 0%, calc(100% - 8px) 100%, 0% 100%);
+}
+
+.btn-primary::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: var(--accent2);
+  transform: translateX(-100%);
+  transition: transform 0.3s ease;
+}
+
+.btn-primary:hover::before {
+  transform: translateX(0);
+}
+
+.btn-primary span {
+  position: relative;
+  z-index: 1;
+}
+
+.btn-ghost {
+  font-family: "Space Grotesk", sans-serif;
+  font-weight: 600;
+  font-size: 13px;
+  letter-spacing: 1.5px;
+  text-transform: uppercase;
+  text-decoration: none;
+  color: var(--accent);
+  background: transparent;
+  padding: 13px 32px;
+  border: 1px solid rgba(0, 212, 255, 0.3);
+  cursor: pointer;
+  transition:
+    border-color 0.2s,
+    color 0.2s,
+    box-shadow 0.2s;
+  clip-path: polygon(8px 0%, 100% 0%, calc(100% - 8px) 100%, 0% 100%);
+}
+
+.btn-ghost:hover {
+  border-color: var(--accent);
+  box-shadow: var(--glow);
+}
+
+.hero-stats {
+  display: flex;
+  gap: 60px;
+  margin-top: 80px;
+  padding-top: 40px;
+  border-top: 1px solid var(--border);
+  animation: fadeInUp 0.8s 0.4s ease both;
+  justify-content: center;
+}
+
+.stat-num {
+  font-size: 36px;
+  font-weight: 700;
+  color: var(--accent);
+  line-height: 1;
+  font-variant-numeric: tabular-nums;
+  text-align: center;
+}
+
+.stat-label {
+  font-family: "Space Mono", monospace;
+  font-size: 10px;
+  color: var(--muted);
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  margin-top: 6px;
+  text-align: center;
+}
+
+/* ── Large: up to 1280px ── */
+@media (max-width: 1280px) {
+  #hero {
+    padding-left: clamp(24px, 4vw, 48px);
+    padding-right: clamp(24px, 4vw, 48px);
+  }
+}
+
+/* ── Tablet: up to 1100px ── */
+@media (max-width: 1100px) {
+  #hero {
+    padding-left: 32px;
+    padding-right: 32px;
+    min-height: 100vh;
+  }
+
+  .hero-name {
+    font-size: clamp(48px, 7vw, 90px);
+    letter-spacing: -2px;
+  }
+
+  .hero-stats {
+    gap: 40px;
+    margin-top: 60px;
+    padding-top: 32px;
+  }
+
+  .stat-num {
+    font-size: 30px;
+  }
+}
+
+/* ── Tablet-Small: up to 900px ── */
+@media (max-width: 900px) {
+  #hero {
+    padding-left: 28px;
+    padding-right: 28px;
+  }
+
+  .hero-name {
+    font-size: clamp(40px, 7vw, 72px);
+    letter-spacing: -2px;
+  }
+
+  .hero-title {
+    font-size: 13px;
+    margin-top: 20px;
+    margin-bottom: 32px;
+  }
+
+  .hero-stats {
+    gap: 28px;
+    flex-wrap: wrap;
+    margin-top: 48px;
+  }
+
+  .stat-num {
+    font-size: 28px;
+  }
+}
+
+/* ── Mobile: up to 700px ── */
+@media (max-width: 700px) {
+  #hero {
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 100px;
+    padding-bottom: 60px;
+    min-height: 100svh;
+    justify-content: flex-start;
+  }
+
+  .hero-tag {
+    font-size: 10px;
+    letter-spacing: 2px;
+    margin-bottom: 16px;
+  }
+
+  .hero-tag::before {
+    width: 24px;
+  }
+
+  .hero-name {
+    font-size: clamp(38px, 40vw, 64px);
+    letter-spacing: -1.5px;
+    line-height: 1;
+  }
+
+  .hero-title {
+    font-size: 12px;
+    margin-top: 16px;
+    margin-bottom: 28px;
+    max-width: 100%;
+    line-height: 1.7;
+  }
+
+  .hero-ctas {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 12px;
+  }
+
+  .btn-primary,
+  .btn-ghost {
+    width: 100%;
+    text-align: center;
+    padding: 14px 24px;
+    justify-content: center;
+    display: block;
+  }
+
+  .hero-stats {
+    gap: 20px;
+    flex-wrap: wrap;
+    margin-top: 40px;
+    padding-top: 28px;
+  }
+
+  .stat-num {
+    font-size: 26px;
+  }
+
+  .stat-label {
+    font-size: 9px;
+    letter-spacing: 1.5px;
+  }
+}
+
+/* ── Small Mobile: up to 480px ── */
+@media (max-width: 480px) {
+  #hero {
+    padding-left: 16px;
+    padding-right: 16px;
+    padding-top: 90px;
+  }
+
+  .hero-name {
+    font-size: clamp(38px, 40vw, 64px);
+    letter-spacing: -1px;
+  }
+
+  .hero-title {
+    font-size: 11.5px;
+  }
+
+  .hero-stats {
+    gap: 16px;
+    margin-top: 32px;
+  }
+
+  .stat-num {
+    font-size: 24px;
+  }
+
+  .hero-tag {
+    font-size: 9px;
+  }
+}
+
+/* ── Extra Small: up to 360px ── */
+@media (max-width: 360px) {
+  .hero-name {
+    font-size: clamp(36px, 40vw, 64px);
+    letter-spacing: -0.5px;
+  }
+
+  .hero-stats {
+    gap: 14px;
+  }
+
+  .stat-num {
+    font-size: 22px;
+  }
+
+  .btn-primary,
+  .btn-ghost {
+    font-size: 12px;
+    padding: 12px 20px;
+  }
+}

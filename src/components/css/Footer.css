@@ -1,0 +1,33 @@
+footer {
+    position: relative;
+    z-index: 2;
+    padding-left: clamp(24px, 5vw, 60px);
+    padding-right: clamp(24px, 5vw, 60px);
+    border-top: 1px solid var(--border);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.footer-copy {
+    font-family: 'Space Mono', monospace;
+    font-size: 11px;
+    color: var(--muted);
+    letter-spacing: 1px;
+}
+
+.footer-sig {
+    font-family: 'Space Mono', monospace;
+    font-size: 11px;
+    color: var(--muted);
+}
+
+.footer-sig span {
+    color: var(--accent);
+}
+
+.footer-social {
+    display: flex;
+    gap: 24px;
+    align-items: center;
+}
