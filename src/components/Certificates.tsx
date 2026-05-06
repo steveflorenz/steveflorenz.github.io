@@ -1,39 +1,39 @@
 import { useState, useEffect, useCallback } from "react";
 import "./css/Certificates.css";
+import blackbelt1 from "../assets/Certs/blackbelt1.png";
+import blackbelt2 from "../assets/Certs/blackbelt2.png";
+import sixsigma_white from "../assets/Certs/SixSigma_WhiteBelt-cert.png";
+import sixsigma_yellow from "../assets/Certs/SixSigma_YellowBelt-Cert.png";
+import cisco_net from "../assets/Certs/Net_cert_sfdmendoza.png";
+import cisco_os from "../assets/Certs/OS_cert_sfdmendoza.png";
+import educba from "../assets/Certs/Educba_cert.png";
+import simplilearn from "../assets/Certs/DataScience_by_Simplilearn_SFM.png";
+import kaggle from "../assets/Certs/kaggle.png";
 
 const galleries: Record<string, { title: string; images: string[] }> = {
   blackbelt: {
     title: "Blackbelt Meraki",
-    images: [
-      "src/assets/Certs/blackbelt1.png",
-      "src/assets/Certs/blackbelt2.png",
-    ],
+    images: [blackbelt1, blackbelt2],
   },
   sixsigma: {
     title: "Six Sigma Training",
-    images: [
-      "src/assets/Certs/SixSigma_WhiteBelt-cert.png",
-      "src/assets/Certs/SixSigma_YellowBelt-Cert.png",
-    ],
+    images: [sixsigma_white, sixsigma_yellow],
   },
   cisco: {
     title: "Cisco — Net & OS",
-    images: [
-      "src/assets/Certs/Net_cert_sfdmendoza.png",
-      "src/assets/Certs/OS_cert_sfdmendoza.png",
-    ],
+    images: [cisco_net, cisco_os],
   },
   educba: {
     title: "EDUCBA — Data Science",
-    images: ["src/assets/Certs/Educba_cert.png"],
+    images: [educba],
   },
   simplilearn: {
     title: "Simplilearn — Data Science",
-    images: ["src/assets/Certs/DataScience_by_Simplilearn_SFM.png"],
+    images: [simplilearn],
   },
   kaggle: {
     title: "Kaggle",
-    images: ["src/assets/Certs/kaggle.png"],
+    images: [kaggle],
   },
 };
 

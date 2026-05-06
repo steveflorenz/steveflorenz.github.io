@@ -87,62 +87,17 @@ const Contact = () => {
 
   return (
     <section id="contact">
+      <div className="section-label">Contact</div>
+      <h2 className="section-title">
+        Let's build
+        <br />
+        <em>something</em>
+      </h2>
+      <p className="about-text" style={{ marginTop: 24 }}>
+        Open to freelance engagements, full-time roles, and security research
+        collaborations. Response time &lt; 24h.
+      </p>
       <div className="contact-inner">
-        <div className="contact-left reveal">
-          <div className="section-label">Contact</div>
-          <h2 className="section-title">
-            Let's build
-            <br />
-            <em>something</em>
-          </h2>
-          <p className="about-text" style={{ marginTop: 24 }}>
-            Open to freelance engagements, full-time roles, and security
-            research collaborations. Response time &lt; 24h.
-          </p>
-          <div className="contact-links">
-            <a href="mailto:tebmendoza@proton.me" className="contact-link-item">
-              <div className="contact-link-icon">
-                <MdEmail />
-              </div>
-              <div>
-                tebmendoza@proton.me
-                <span className="contact-link-meta">EMAIL</span>
-              </div>
-              <span className="contact-link-arrow">→</span>
-            </a>
-            <a
-              href="https://github.com/steveflorenz"
-              className="contact-link-item"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              <div className="contact-link-icon">
-                <FaGithub />
-              </div>
-              <div>
-                github.com/steveflorenz
-                <span className="contact-link-meta">GITHUB</span>
-              </div>
-              <span className="contact-link-arrow">→</span>
-            </a>
-            <a
-              href="https://linkedin.com/in/sf-mendoza"
-              className="contact-link-item"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              <div className="contact-link-icon">
-                <FaLinkedin />
-              </div>
-              <div>
-                linkedin.com/in/sf-mendoza
-                <span className="contact-link-meta">LINKEDIN</span>
-              </div>
-              <span className="contact-link-arrow">→</span>
-            </a>
-          </div>
-        </div>
-
         <div className="reveal" style={{ transitionDelay: "0.2s" }}>
           {submitted ? (
             <div id="form-success">
@@ -259,6 +214,51 @@ const Contact = () => {
               </div>
             </form>
           )}
+        </div>
+
+        <div className="contact-left reveal">
+          <div className="contact-links">
+            <a href="mailto:tebmendoza@proton.me" className="contact-link-item">
+              <div className="contact-link-icon">
+                <MdEmail />
+              </div>
+              <div>
+                tebmendoza@proton.me
+                <span className="contact-link-meta">EMAIL</span>
+              </div>
+              <span className="contact-link-arrow">→</span>
+            </a>
+            <a
+              href="https://github.com/steveflorenz"
+              className="contact-link-item"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <div className="contact-link-icon">
+                <FaGithub />
+              </div>
+              <div>
+                github.com/steveflorenz
+                <span className="contact-link-meta">GITHUB</span>
+              </div>
+              <span className="contact-link-arrow">→</span>
+            </a>
+            <a
+              href="https://linkedin.com/in/sf-mendoza"
+              className="contact-link-item"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <div className="contact-link-icon">
+                <FaLinkedin />
+              </div>
+              <div>
+                linkedin.com/in/sf-mendoza
+                <span className="contact-link-meta">LINKEDIN</span>
+              </div>
+              <span className="contact-link-arrow">→</span>
+            </a>
+          </div>
         </div>
       </div>
     </section>
