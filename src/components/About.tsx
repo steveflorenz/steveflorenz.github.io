@@ -1,6 +1,6 @@
 import { useEffect, useRef } from "react";
 import "./css/About.css";
-import CV from "../assets/CVs/Steve_Florenz_Mendoza_CV.pdf";
+import CV from "../assets/CVs/Steve-Florenz-Mendoza-CV.pdf";
 import SkillBars from "./Prog-bars";
 
 const About = () => {
@@ -61,7 +61,7 @@ const About = () => {
             href={CV}
             className="btn-primary"
             style={{ textDecoration: "none", display: "inline-block" }}
-            download="Steve_Florenz_Mendoza_CV.pdf"
+            download="Steve-Florenz-Mendoza-CV.pdf"
           >
             <span>Download CV</span>
           </a>
