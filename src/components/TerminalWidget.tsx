@@ -163,7 +163,6 @@ export default function TerminalWidget() {
     return () => window.removeEventListener("resize", handleViewportResize);
   }, []);
 
-  // Focus the input whenever the panel opens or is un-minimized
   useEffect(() => {
     if (isOpen && !isMinimized) {
       inputRef.current?.focus();
@@ -230,7 +229,6 @@ export default function TerminalWidget() {
     }
   };
 
-  // ---- Closed state: just the floating launcher pill ----
   if (!isOpen) {
     return (
       <button
