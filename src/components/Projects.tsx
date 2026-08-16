@@ -91,6 +91,12 @@ const Projects = () => {
               interviewers, streamlining the recruitment process and eliminating
               manual scheduling tasks.
             </div>
+            <div className="project-footer">
+              <a href="#" className="project-link">
+                VIEW →
+              </a>
+              <span className="project-meta">2026</span>
+            </div>
           </div>
           <div
             className="project-card reveal"

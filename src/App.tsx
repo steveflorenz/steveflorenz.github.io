@@ -10,6 +10,7 @@ import Contact from "./components/Contact";
 import Footer from "./components/Footer";
 import GoogleAuto from "./components/pages/GoogleAuto";
 import MatrixBg from "./components/Matrix";
+import TerminalWidget from "./components/TerminalWidget";
 
 function App() {
   const [] = useState(0);
@@ -25,6 +26,7 @@ function App() {
           path="/"
           element={
             <>
+              <TerminalWidget />
               <Hero />
               <About />
               <Projects />
