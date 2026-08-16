@@ -25,13 +25,14 @@ const COMMANDS: CommandMap = {
   ],
   skills: () => [
     "Linux (Fedora, Kali, Parrot) | Windows Server | Active Directory",
-    "Networking: CCNA-level routing/switching, Wireshark, Aircrack-ng",
-    "Automation & scripting: Bash, Google Apps Script",
+    "Networking: Routing/Switching, Wireshark, Aircrack-ng",
+    "Automation & scripting: Bash, Google Apps Script, Python",
     "Web: React, TypeScript, Vite, Tailwind",
   ],
   projects: () => [
-    "pro-portf   - personal portfolio (React/Vite/TS, matrix UI)",
+    "Portfolio   - personal portfolio (React/Vite/TS, matrix UI)",
     "type 'contact' for links to see more on GitHub.",
+    "Odoo ERP modules set-up",
   ],
   contact: () => [
     "email  : tebmendoza@proton.me",
@@ -43,7 +44,7 @@ const COMMANDS: CommandMap = {
 };
 
 const BANNER = [
-  "welcome to my terminal portfolio.",
+  "welcome to my customized terminal.",
   "type 'help' to see available commands. (PS it's limited tho 🙂)",
 ];
 
