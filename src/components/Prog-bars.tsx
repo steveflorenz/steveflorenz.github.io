@@ -6,33 +6,30 @@ const skills = [
   { name: "Front-end", level: 75 },
   { name: "Back-end", level: 53 },
   { name: "Cloud / DevSecOps", level: 74 },
+  { name: "APIs", level: 50 },
 ];
 
 const SkillBars = () => {
   const barsRef = useRef<HTMLDivElement>(null);
 
-  useEffect(() => {
-    const bars = barsRef.current?.querySelectorAll('.progress-fill');
-    if (!bars) return;
+useEffect(() => {
+    const container = barsRef.current;
+    if (!container) return;
 
-    const observer = new IntersectionObserver(entries => {
-      entries.forEach(e => {
-        if (e.isIntersecting) {
-          const target = e.target as HTMLElement;
-          target.style.width = target.dataset.width + '%';
-          observer.unobserve(target);
-        }
-      });
-    }, { threshold: 0.3 });
-    
-    const timeout = setTimeout(() => {
-      bars.forEach(bar => observer.observe(bar));
-    }, 100);
+    const observer = new IntersectionObserver(([entry]) => {
+      if (entry.isIntersecting) {
+        const bars = container.querySelectorAll<HTMLElement>('.progress-fill');
+        bars.forEach((bar, i) => {
+          setTimeout(() => {
+            bar.style.width = bar.dataset.width + '%';
+          }, i * 100);
+        });
+        observer.unobserve(container);
+      }
+    }, { threshold: 0.1 });
 
-    return () => {
-        observer.disconnect();
-        clearTimeout(timeout);
-    };
+    observer.observe(container);
+    return () => observer.disconnect();
   }, []);
 
   return (

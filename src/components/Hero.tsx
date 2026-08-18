@@ -91,7 +91,7 @@ const Hero = () => {
             <div className="stat-label">Projects</div>
           </div>
           <div>
-            <div className="stat-num" data-count="1.5">
+            <div className="stat-num" data-count="2">
               0
             </div>
             <div className="stat-label">Years Exp.</div>

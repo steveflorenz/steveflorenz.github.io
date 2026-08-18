@@ -235,7 +235,6 @@
     height: min(60vh, 320px) !important;
   }
 
-  /* Bigger touch target for resizing on small screens */
   .terminal-resize-handle {
     width: 28px;
     height: 28px;
