@@ -17,7 +17,7 @@ const Projects = () => {
         </div>
         <div className="projects-grid">
           <div className="project-card featured reveal">
-            <div className="project-num">001</div>
+            <div className="project-num">// 001</div>
             <div className="project-tags">
               <span className="tag tag-cyan">Website</span>
               <span className="tag tag-green">Design</span>
@@ -51,7 +51,7 @@ const Projects = () => {
             className="project-card reveal"
             style={{ transitionDelay: "0.1s" }}
           >
-            <div className="project-num">002</div>
+            <div className="project-num">// 002</div>
             <div className="project-tags">
               <span className="tag tag-cyan">Google</span>
               <span className="tag tag-cyan">JavaScript</span>
@@ -104,15 +104,18 @@ const Projects = () => {
           >
             <div className="project-num">// 004</div>
             <div className="project-tags">
-              <span className="tag tag-red">CodeIgniter</span>
-              <span className="tag tag-cyan">PHP</span>
-              <span className="tag tag-green">WEB APP</span>
+              <span className="tag tag-cyan">PYTHON</span>
+              <span className="tag tag-red">API</span>
+              <span className="tag tag-green">Scheduled Jobs</span>
+              <span className="tag tag-red">Automation</span>
+              <span className="tag tag-green">Data Validation</span>
             </div>
-            <div className="project-name">Inventory Web Application</div>
+            <div className="project-name">Warehouse Sales ETL API</div>
             <div className="project-desc">
-              Participated in the development of an inventory web-app during my
-              internship, contributing to the front-end implementation within an
-              MVC-based architecture using CodeIgniter web framework.
+              Diagnosed and fixed silent data-corruption bugs in a production
+              ETL pipeline syncing warehouse/sales metrics between an ERP system
+              and a downstream reporting platform, verifying each fix
+              metric-by-metric with the downstream team.
             </div>
             <div className="project-footer">
               <a href="#" className="project-link">
@@ -163,7 +166,7 @@ const Projects = () => {
 
         <div className="projects-grid">
           <div className="project-card featured reveal">
-            <div className="project-num">001</div>
+            <div className="project-num">// 001</div>
             <div className="project-tags">
               <span className="tag tag-cyan">Odoo ERP</span>
               <span className="tag tag-green">Workflow</span>
